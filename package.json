@@ -1,0 +1,10 @@
+{
+  "name": "@newfold-labs/wp-module-maestro",
+  "description": "Maestro Newfold module for WordPress",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "author": {
+    "name": "Micah Wood",
+    "email": "micah.wood@newfold.com"
+  }
+}
