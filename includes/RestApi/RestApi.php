@@ -1,6 +1,8 @@
 <?php
 
-namespace NewfoldLabs\WP\Module\RestApi;
+namespace NewfoldLabs\WP\Module\Maestro\RestApi;
+
+use NewfoldLabs\WP\Module\Maestro\Auth\Token;
 
 /**
  * Primary class for loading REST API endpoints and handling authentication
@@ -12,8 +14,7 @@ class RestApi {
 	 */
 	public function __construct() {
 
-		$this->register_routes();
-
+		add_action( 'rest_api_init', array( $this, 'register_routes' ) );
 		add_action( 'rest_authentication_errors', array( $this, 'authenticate' ) );
 
 	}

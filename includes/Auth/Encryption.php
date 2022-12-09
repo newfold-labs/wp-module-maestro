@@ -6,7 +6,6 @@ namespace NewfoldLabs\WP\Module\Maestro\Auth;
  * Simple encryption/decryption class for storing tokens
  */
 class Encryption {
-
 	/**
 	 * Key to use for encrypting/decrypting
 	 *

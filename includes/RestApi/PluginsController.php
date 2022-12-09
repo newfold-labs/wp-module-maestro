@@ -1,14 +1,15 @@
 <?php
 
-namespace Bluehost\Maestro\RestApi;
+namespace NewfoldLabs\WP\Module\Maestro\RestApi;
 
 use Exception;
 use WP_REST_Server;
 use WP_REST_Response;
 use Plugin_Upgrader;
+use WP_Ajax_Upgrader_Skin;
 
 use NewfoldLabs\WP\Module\Maestro\Models\Plugin;
-use NewfoldLabs\WP\Module\Maestro\Models\WebPro;
+use NewfoldLabs\WP\Module\Maestro\Auth\WebPro;
 use NewfoldLabs\WP\Module\Maestro\Util;
 
 /**

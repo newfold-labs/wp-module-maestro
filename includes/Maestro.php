@@ -3,8 +3,11 @@
 namespace NewfoldLabs\WP\Module\Maestro;
 
 use NewfoldLabs\WP\ModuleLoader\Container;
-namespace NewfoldLabs\WP\Module\RestApi\RestApi;
+use NewfoldLabs\WP\Module\Maestro\RestApi\RestApi;
 
+/**
+ * Maestro's container to initialize the functionality
+ */
 class Maestro {
 
 	/**
@@ -17,11 +20,18 @@ class Maestro {
 	/**
 	 * Constructor.
 	 *
-	 * @param Container $container
+	 * @param Container $container The module loader container
 	 */
 	public function __construct( Container $container ) {
 
 		$this->container = $container;
+		// Require SSO
+		require MODULE_MAESTRO_DIR . '/includes/sso.php';
+
+		if ( is_readable( MODULE_MAESTRO_DIR . '/vendor/autoload.php' ) ) {
+			require_once MODULE_MAESTRO_DIR . '/vendor/autoload.php';
+		}
+
 		new RestApi();
 	}
 

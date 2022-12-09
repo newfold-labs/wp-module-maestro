@@ -1,12 +1,12 @@
 <?php
 
-namespace Bluehost\Maestro\RestApi;
+namespace NewfoldLabs\WP\Module\Maestro\RestApi;
 
 use Exception;
 use WP_REST_Server;
 use WP_REST_Response;
 
-use NewfoldLabs\WP\Module\Maestro\Models\WebPro;
+use NewfoldLabs\WP\Module\Maestro\Auth\WebPro;
 
 /**
  * Class SSOController

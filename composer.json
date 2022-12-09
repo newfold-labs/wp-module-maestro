@@ -9,8 +9,21 @@
       "email": "micah.wood@newfold.com"
     }
   ],
+  "repositories": {
+    "bluehost": {
+      "type": "composer",
+      "url": "https://bluehost.github.io/satis/",
+      "only": [
+        "bluehost/*",
+        "endurance/*"
+      ]
+    }
+  },
   "require": {
     "firebase/php-jwt": "^5.0"
+  },
+  "require-dev": {
+    "bluehost/wp-php-standards": "@stable"
   },
   "autoload": {
     "psr-4": {
@@ -19,5 +32,22 @@
     "files": [
       "bootstrap.php"
     ]
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf --standard=phpcs.xml ."
+    ],
+    "lint": [
+      "vendor/bin/phpcs --standard=phpcs.xml -s ."
+    ]
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
