@@ -3,6 +3,7 @@
 namespace NewfoldLabs\WP\Module\Maestro;
 
 use NewfoldLabs\WP\ModuleLoader\Container;
+namespace NewfoldLabs\WP\Module\RestApi\RestApi;
 
 class Maestro {
 
@@ -21,9 +22,7 @@ class Maestro {
 	public function __construct( Container $container ) {
 
 		$this->container = $container;
-
-		// Module functionality goes here
-
+		new RestApi();
 	}
 
 }

@@ -9,6 +9,9 @@
       "email": "micah.wood@newfold.com"
     }
   ],
+  "require": {
+    "firebase/php-jwt": "^5.0"
+  },
   "autoload": {
     "psr-4": {
       "NewfoldLabs\\WP\\Module\\Maestro\\": "includes"
