@@ -25,14 +25,20 @@ class Maestro {
 	public function __construct( Container $container ) {
 
 		$this->container = $container;
-		// Require SSO
-		require MODULE_MAESTRO_DIR . '/includes/sso.php';
 
 		if ( is_readable( MODULE_MAESTRO_DIR . '/vendor/autoload.php' ) ) {
 			require_once MODULE_MAESTRO_DIR . '/vendor/autoload.php';
 		}
 
 		new RestApi();
+
+		// Require SSO
+		require MODULE_MAESTRO_DIR . '/includes/sso.php';
+
+		// Require the WP_CLI command if we have that function available
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			require_once MODULE_MAESTRO_DIR . '/includes/WebProCliCommand.php';
+		}
 	}
 
 }

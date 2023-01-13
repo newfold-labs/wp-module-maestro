@@ -329,7 +329,7 @@ class PluginsController extends \WP_REST_Controller {
 	/**
 	 * Verify permission to access this endpoint
 	 *
-	 * Authenticating a Webpro user via token
+	 * Authenticating a WebPro user via token
 	 *
 	 * @since 1.2
 	 *

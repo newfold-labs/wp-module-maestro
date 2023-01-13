@@ -7,10 +7,10 @@ use WP_Error;
 use WP_User_Query;
 use WP_REST_Response;
 
-use NewfoldLabs\WP\Module\Maestro\Auth\Webpro;
+use NewfoldLabs\WP\Module\Maestro\Auth\WebPro;
 
 /**
- * Class WebprosController
+ * Class WebProsController
  */
 class WebProsController extends \WP_REST_Controller {
 
