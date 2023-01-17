@@ -34,11 +34,6 @@ class Maestro {
 
 		// Require SSO
 		require MODULE_MAESTRO_DIR . '/includes/sso.php';
-
-		// Require the WP_CLI command if we have that function available
-		if ( defined( 'WP_CLI' ) && WP_CLI ) {
-			require_once MODULE_MAESTRO_DIR . '/includes/WebProCliCommand.php';
-		}
 	}
 
 }
