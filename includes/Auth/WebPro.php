@@ -289,7 +289,8 @@ class WebPro {
 		}
 
 		// Restrict who can add Maestro connections
-		if ( ! current_user_can( 'edit_users' ) ) {
+		// Allow usage from WP CLI
+		if ( ! get_current_user_id() === 0 && ! current_user_can( 'edit_users' ) ) {
 			return false;
 		};
 
