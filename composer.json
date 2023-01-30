@@ -12,7 +12,10 @@
   "repositories": {
     "newfold": {
       "type": "composer",
-      "url": "https://newfold-labs.github.io/satis/"
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
     }
   },
   "require": {
