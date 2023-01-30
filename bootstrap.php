@@ -11,7 +11,7 @@ if ( function_exists( 'add_action' ) ) {
 		function () {
 
 			// Set Global Constants
-			if ( ! defined( 'MODULE_MAESTRO_VERSION') )  {
+			if ( ! defined( 'MODULE_MAESTRO_VERSION' ) ) {
 				define( 'MODULE_MAESTRO_VERSION', '0.0.1' );
 			}
 
