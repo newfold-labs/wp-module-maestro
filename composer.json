@@ -9,6 +9,22 @@
       "email": "micah.wood@newfold.com"
     }
   ],
+  "repositories": {
+    "newfold": {
+      "type": "composer",
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
+    }
+  },
+  "require": {
+    "firebase/php-jwt": "^5.0",
+    "newfold-labs/wp-module-loader": "^1.0.10"
+  },
+  "require-dev": {
+    "newfold-labs/wp-php-standards": "@stable"
+  },
   "autoload": {
     "psr-4": {
       "NewfoldLabs\\WP\\Module\\Maestro\\": "includes"
@@ -16,5 +32,22 @@
     "files": [
       "bootstrap.php"
     ]
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf --standard=phpcs.xml ."
+    ],
+    "lint": [
+      "vendor/bin/phpcs --standard=phpcs.xml -s ."
+    ]
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
