@@ -7,6 +7,7 @@ use WP_REST_Server;
 use WP_REST_Response;
 
 use NewfoldLabs\WP\Module\Maestro\Auth\WebPro;
+use NewfoldLabs\WP\Module\Maestro\Auth\Token;
 
 /**
  * Class SSOController
