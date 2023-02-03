@@ -1,6 +1,7 @@
 <?php
 
 namespace NewfoldLabs\WP\Module\Maestro;
+
 use NewfoldLabs\WP\Module\Maestro\Auth\Token;
 
 // Ajax hooks for SSO
