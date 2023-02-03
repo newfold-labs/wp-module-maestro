@@ -2,6 +2,8 @@
 
 namespace NewfoldLabs\WP\Module\Maestro;
 
+use NewfoldLabs\WP\Module\Maestro\Auth\Token;
+
 // Ajax hooks for SSO
 add_action( 'wp_ajax_nopriv_bh-maestro-sso', __NAMESPACE__ . '\\authenticate_sso' );
 add_action( 'wp_ajax_bh-maestro-sso', __NAMESPACE__ . '\\authenticate_sso' );
