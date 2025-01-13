@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "firebase/php-jwt": "^5.0",
+    "firebase/php-jwt": "^6.10",
     "newfold-labs/wp-module-loader": "^1.0.10"
   },
   "require-dev": {
