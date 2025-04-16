@@ -1,53 +1,75 @@
 {
-  "name": "newfold-labs/wp-module-maestro",
-  "description": "Maestro Newfold module for WordPress",
-  "type": "library",
-  "license": "GPL-2.0-or-later",
-  "authors": [
-    {
-      "name": "Micah Wood",
-      "email": "micah.wood@newfold.com"
-    }
-  ],
-  "repositories": {
-    "newfold": {
-      "type": "composer",
-      "url": "https://newfold-labs.github.io/satis/",
-      "only": [
-        "newfold-labs/*"
-      ]
-    }
-  },
-  "require": {
-    "firebase/php-jwt": "^5.0",
-    "newfold-labs/wp-module-loader": "^1.0.10"
-  },
-  "require-dev": {
-    "newfold-labs/wp-php-standards": "@stable"
-  },
-  "autoload": {
-    "psr-4": {
-      "NewfoldLabs\\WP\\Module\\Maestro\\": "includes"
-    },
-    "files": [
-      "bootstrap.php"
-    ]
-  },
-  "scripts": {
-    "fix": [
-      "vendor/bin/phpcbf --standard=phpcs.xml ."
+    "name": "newfold-labs/wp-module-maestro",
+    "description": "Maestro Newfold module for WordPress",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Micah Wood",
+            "email": "micah.wood@newfold.com"
+        }
     ],
-    "lint": [
-      "vendor/bin/phpcs --standard=phpcs.xml -s ."
-    ]
-  },
-  "scripts-descriptions": {
-    "fix": "Automatically fix coding standards issues where possible.",
-    "lint": "Check files against coding standards."
-  },
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
+    "repositories": {
+        "outlandishideas/wpackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        "newfold": {
+            "type": "composer",
+            "url": "https://newfold-labs.github.io/satis/",
+            "only": [
+                "newfold-labs/*"
+            ]
+        }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "newfold-labs/wp-module-loader": "^1.0.10"
+    },
+    "require-dev": {
+        "newfold-labs/wp-php-standards": "@stable",
+        "johnpbloch/wordpress": "@stable",
+        "lucatume/wp-browser": "*",
+        "phpunit/phpcov": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NewfoldLabs\\WP\\Module\\Maestro\\": "includes"
+        },
+        "files": [
+            "bootstrap.php"
+        ]
+    },
+    "scripts": {
+        "fix": [
+            "vendor/bin/phpcbf --standard=phpcs.xml ."
+        ],
+        "lint": [
+            "vendor/bin/phpcs --standard=phpcs.xml -s ."
+        ],
+        "test": [
+            "codecept run wpunit"
+        ],
+        "test-coverage": [
+            "codecept run wpunit --coverage wpunit.cov",
+            "phpcov merge --php tests/_output/merged.cov --html tests/_output/html tests/_output;",
+            "echo \"open tests/_output/html/index.html\" to view the report"
+        ]
+    },
+    "scripts-descriptions": {
+        "fix": "Automatically fix coding standards issues where possible.",
+        "lint": "Check files against coding standards.",
+        "test": "Run tests.",
+        "test-coverage": "Run tests with coverage, merge coverage and create HTML report."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        },
+        "platform": {
+            "php": "7.3"
+        }
     }
-  }
 }
