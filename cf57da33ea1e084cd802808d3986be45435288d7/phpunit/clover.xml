@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749123412">
-  <project timestamp="1749123412">
+<coverage generated="1749123873">
+  <project timestamp="1749123873">
     <file name="/home/runner/work/wp-module-maestro/wp-module-maestro/includes/Auth/Encryption.php">
       <class name="NewfoldLabs\WP\Module\Maestro\Auth\Encryption" namespace="global">
         <metrics complexity="14" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="0" elements="32" coveredelements="0"/>
