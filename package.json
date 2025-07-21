@@ -8,6 +8,6 @@
     "email": "micah.wood@newfold.com"
   },
   "devDependencies": {
-    "@wordpress/env": "^10.22.0"
+    "@wordpress/env": "^10.26.0"
   }
 }
