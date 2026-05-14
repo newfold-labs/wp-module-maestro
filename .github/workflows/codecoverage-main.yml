@@ -24,6 +24,7 @@ jobs:
     permissions:
       contents: write       # Required to check out the repo and push coverage updates to gh-pages (write implies read).
       pull-requests: write # Required for mshick/add-pr-comment to post or update sticky PR comments.
+    timeout-minutes: 60
 
     services:
       mysql:
