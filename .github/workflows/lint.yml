@@ -24,11 +24,9 @@ jobs:
     name: Run PHP Code Sniffer
     runs-on: ubuntu-latest
     permissions:
-      contents: read        # Required to clone the repo.
-      actions: read         # Required to restore the Composer dependency cache.
-      actions: write        # Required to save the Composer dependency cache.
+      contents: read
       pull-requests: read # Required because technote-space/get-diff-action uses the GitHub pulls API.
-    timeout-minutes: 30
+    timeout-minutes: 5
     steps:
 
       - name: Checkout
