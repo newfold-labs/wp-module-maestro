@@ -42,7 +42,7 @@ function authenticate_sso() {
 		failed_sso_attempts( 1 );
 		do_action( 'bh_maestro_sso_fail' );
 		wp_die(
-			esc_html__( 'Invalid token.', 'maestro-connector' ),
+			esc_html__( 'Invalid token.', 'wp-module-maestro' ),
 			403
 		);
 	}

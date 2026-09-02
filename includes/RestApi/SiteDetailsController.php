@@ -106,7 +106,7 @@ class SiteDetailsController extends \WP_REST_Controller {
 		if ( ! $util->is_bluehost() ) {
 			return new WP_Rest_Response(
 				array(
-					'error' => 'Site needs to be on BH for this to work',
+					'error' => __( 'Site needs to be on BH for this to work', 'wp-module-maestro' ),
 					'code'  => 'notABHSite',
 				),
 				400
