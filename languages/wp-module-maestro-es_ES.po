@@ -1,143 +1,136 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://github.com/newfold-labs/wp-module-maestro/issues\n"
+"POT-Creation-Date: 2025-02-13T09:55:55+00:00\n"
+"PO-Revision-Date: 2026-09-02T18:45:08+00:00\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-13T09:55:55+00:00\n"
-"PO-Revision-Date: 2026-09-02T17:38:52+00:00\n"
-"Language: es\n"
-"X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: wp-module-maestro\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: bootstrap.php:25
-msgid "Maestro"
-msgstr ""
-
-#: includes/Auth/Token.php:160
-#: includes/sso.php:45
-msgid "Invalid token."
-msgstr ""
-
-#: includes/Auth/Token.php:184
-msgid "Token user must have an ID."
-msgstr ""
-
-#: includes/Auth/Token.php:194
-msgid "Web Pro is invalid."
-msgstr ""
-
-#: includes/Auth/Token.php:202
-msgid "Token user_login is invalid."
-msgstr ""
-
-#: includes/Auth/Token.php:210
-msgid "Token user_email is invalid."
-msgstr ""
+"X-Domain: wp-module-maestro\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #: includes/Auth/Token.php:218
 msgid "Connection key is invalid."
-msgstr ""
-
-#: includes/Auth/Token.php:226
-msgid "Token issuer is invalid."
-msgstr ""
-
-#: includes/Auth/Token.php:263
-msgid "Token must have an expiration."
-msgstr ""
-
-#: includes/Auth/Token.php:270
-msgid "Token has expired."
-msgstr ""
-
-#: includes/Auth/Token.php:294
-msgid "Token must have a unique identifier."
-msgstr ""
-
-#: includes/Auth/Token.php:302
-msgid "Token identifier is not valid."
-msgstr ""
-
-#: includes/RestApi/PluginsController.php:233
-msgid "Plugin already up to date"
-msgstr ""
-
-#: includes/RestApi/PluginsController.php:312
-#: includes/RestApi/SiteDetailsController.php:109
-#: includes/RestApi/ThemesController.php:317
-msgid "Site needs to be on BH for this to work"
-msgstr ""
-
-#: includes/RestApi/ThemesController.php:201
-msgid "Theme already up to date"
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:67
-#: includes/RestApi/WebProsController.php:518
-msgid "Unique identifier for the user."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:128
-#: includes/RestApi/WebProsController.php:135
-#: includes/RestApi/WebProsController.php:156
-msgid "Sorry, you are not allowed to access this endpoint."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:163
-msgid "Sorry, you are not allowed to grant access to web pros."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:214
-msgid "Failed to connect Web Pro"
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:285
-msgid "Failed to revoke Maestro status"
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:317
-#: includes/RestApi/WebProsController.php:345
-#: includes/RestApi/WebProsController.php:373
-msgid "You are not an authorized web pro."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:446
-msgid "Invalid user ID."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:486
-msgid "Username contains invalid characters."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:493
-msgid "Sorry, that username is not allowed."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:523
-msgid "Login name for the user."
-msgstr ""
+msgstr "La clave de conexión es inválida."
 
 #: includes/RestApi/WebProsController.php:532
 msgid "Display name for the user."
-msgstr ""
+msgstr "Nombre de visualización para el usuario."
+
+#: includes/RestApi/WebProsController.php:214
+msgid "Failed to connect Web Pro"
+msgstr "No se ha conseguido conectar Web Pro"
+
+#: includes/RestApi/WebProsController.php:285
+msgid "Failed to revoke Maestro status"
+msgstr "No revocó el estatus de Maestro"
+
+#: includes/Auth/Token.php:160 includes/sso.php:45
+msgid "Invalid token."
+msgstr "Ficha inválida."
+
+#: includes/RestApi/WebProsController.php:446
+msgid "Invalid user ID."
+msgstr "ID de usuario inválido."
+
+#: includes/RestApi/WebProsController.php:523
+msgid "Login name for the user."
+msgstr "Nombre de usuario para el usuario."
+
+#: bootstrap.php:25
+msgid "Maestro"
+msgstr "Maestro"
+
+#: includes/RestApi/PluginsController.php:233
+msgid "Plugin already up to date"
+msgstr "El plugin ya está actualizado"
+
+#: includes/RestApi/PluginsController.php:312 includes/RestApi/SiteDetailsController.php:109 includes/RestApi/ThemesController.php:317
+msgid "Site needs to be on BH for this to work"
+msgstr "El sitio tiene que estar en BH para que esto funcione"
+
+#: includes/RestApi/WebProsController.php:493
+msgid "Sorry, that username is not allowed."
+msgstr "Lo siento, ese nombre de usuario no está permitido."
+
+#: includes/RestApi/WebProsController.php:128 includes/RestApi/WebProsController.php:135 includes/RestApi/WebProsController.php:156
+msgid "Sorry, you are not allowed to access this endpoint."
+msgstr "Lo siento, no se permite acceder a este endpoint."
+
+#: includes/RestApi/WebProsController.php:163
+msgid "Sorry, you are not allowed to grant access to web pros."
+msgstr "Lo siento, no está permitido conceder acceso a profesionales web."
 
 #: includes/RestApi/WebProsController.php:541
 msgid "The email address for the user."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:548
-msgid "The user who approved the Maestro connection."
-msgstr ""
-
-#: includes/RestApi/WebProsController.php:554
-msgid "Time when the Maestro connection was approved."
-msgstr ""
+msgstr "La dirección de correo electrónico del usuario."
 
 #: includes/RestApi/WebProsController.php:561
 msgid "The maestro identifier key for the webpro."
-msgstr ""
+msgstr "La clave identificadora Maestro para el webpro."
+
+#: includes/RestApi/WebProsController.php:548
+msgid "The user who approved the Maestro connection."
+msgstr "El usuario que aprobó la conexión con Maestro."
+
+#: includes/RestApi/ThemesController.php:201
+msgid "Theme already up to date"
+msgstr "Tema ya actualizado"
+
+#: includes/RestApi/WebProsController.php:554
+msgid "Time when the Maestro connection was approved."
+msgstr "Tiempo en que se aprobó la conexión con Maestro."
+
+#: includes/Auth/Token.php:270
+msgid "Token has expired."
+msgstr "El token ha caducado."
+
+#: includes/Auth/Token.php:302
+msgid "Token identifier is not valid."
+msgstr "El identificador de token no es válido."
+
+#: includes/Auth/Token.php:226
+msgid "Token issuer is invalid."
+msgstr "El emisor del token es inválido."
+
+#: includes/Auth/Token.php:294
+msgid "Token must have a unique identifier."
+msgstr "El token debe tener un identificador único."
+
+#: includes/Auth/Token.php:263
+msgid "Token must have an expiration."
+msgstr "El token debe tener un caducidad."
+
+#: includes/Auth/Token.php:184
+msgid "Token user must have an ID."
+msgstr "El usuario del token debe tener un ID."
+
+#: includes/Auth/Token.php:210
+msgid "Token user_email is invalid."
+msgstr "El token user_email es inválido."
+
+#: includes/Auth/Token.php:202
+msgid "Token user_login is invalid."
+msgstr "El token user_login es inválido."
+
+#: includes/RestApi/WebProsController.php:67 includes/RestApi/WebProsController.php:518
+msgid "Unique identifier for the user."
+msgstr "Identificador único para el usuario."
+
+#: includes/RestApi/WebProsController.php:486
+msgid "Username contains invalid characters."
+msgstr "El nombre de usuario contiene caracteres inválidos."
+
+#: includes/Auth/Token.php:194
+msgid "Web Pro is invalid."
+msgstr "Web Pro no es válido."
+
+#: includes/RestApi/WebProsController.php:317 includes/RestApi/WebProsController.php:345 includes/RestApi/WebProsController.php:373
+msgid "You are not an authorized web pro."
+msgstr "No eres un profesional web autorizado."
