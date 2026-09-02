@@ -198,7 +198,7 @@ class ThemesController extends \WP_REST_Controller {
 		if ( ! isset( $update_response ) ) {
 			return new WP_Rest_Response(
 				array(
-					'error' => 'Theme already up to date',
+					'error' => __( 'Theme already up to date', 'wp-module-maestro' ),
 					'code'  => 'alreadyUpdated',
 				),
 				400
@@ -314,7 +314,7 @@ class ThemesController extends \WP_REST_Controller {
 		if ( ! $util->is_bluehost() ) {
 			return new WP_Rest_Response(
 				array(
-					'error' => 'Site needs to be on BH for this to work',
+					'error' => __( 'Site needs to be on BH for this to work', 'wp-module-maestro' ),
 					'code'  => 'notABHSite',
 				),
 				400

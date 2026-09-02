@@ -22,7 +22,7 @@ if ( function_exists( 'add_action' ) ) {
 			register(
 				[
 					'name'     => 'maestro',
-					'label'    => __( 'Maestro', 'newfold-maestro-module' ),
+					'label'    => __( 'Maestro', 'wp-module-maestro' ),
 					'callback' => function ( Container $container ) {
 						new Maestro( $container );
 					},
